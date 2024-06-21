@@ -15,30 +15,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-    <!-- Message Sent!
-    Thanks for completing the form. We'll be in touch soon! -->
+    <div class="message-sent">
+      <div>
+        <img src="./assets/images/icon-success-check.svg" alt="">
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <!-- Message Sent! -->
   <form action="submit">
     <h1>Contact Us</h1>
+    <!-- fist and last name -->
     <div class="container-inputs">
       <div class="container-input container--name-input">  
         <label for="firt-name" class="label" >First Name</label>
-        <input type="text" id="last-name" name="name" required> 
-        <span class="required inactive">This field is required</span>
+        <input type="text" id="first-name" name="name" > 
+        <span class="first-name--required required inactive">This field is required</span>
       </div>
       <div class="container-input container--name-input">  
         <label for="last-name" class="label" >Last Name</label>
-        <input type="text" id="last-name" name="name" required> 
-        <span class="required inactive">This field is required</span>
+        <input type="text" id="last-name" name="name" > 
+        <span class="last-name--required required inactive">This field is required</span>
       </div>
     </div>
-      
-      
-      <div class="container-input container--email-input">
-        <label for="email-input" class="label">Email Address</label>  
-        <input type="text" id="email-input" name="email">
-        <span class="required inactive">Please enter a valid email address</span>
-      </div>
+    <!-- email input -->
+    <div class="container-input container--email-input">
+      <label for="email-input" class="label">Email Address</label>  
+      <input type="text" id="email-input" name="email">
+      <span class="email--required required inactive">Please enter a valid email address</span>
+    </div>
+      <!-- Query -->
     <div class=" container--query-type">
       <h2 class="label">Query Type</h2>
       <div class="container-radio-input">
@@ -52,20 +58,21 @@
         </div>
       </div>
    
-      <span class="required inactive">Please select a query type</span>
+      <span class="query--required required inactive">Please select a query type</span>
     </div>
+    <!-- Message -->
     <div class="container-input container--message">
-      <label for="Message-input" class="label">Message</label>
-      <textarea id="Message-input" name="message" rows="4"></textarea>
-      <span class="required inactive">This field is required</span>
+      <label for="message-input" class="label">Message</label>
+      <textarea id="message-input" name="message" rows="4"></textarea>
+      <span class="message--required required inactive">This field is required</span>
     </div>
-
+    <!-- consent input -->
     <div class=" container--consent-input">
       <div>
         <input type="checkbox" id="consent" name="consent">
         <label for="consent" class="label">I consent to being contacted by the team</label> 
       </div>
-      <span class="required inactive">To submit this form, please consent to being contacted</span>
+      <span class="consent--required required inactive">To submit this form, please consent to being contacted</span>
     </div>
 
     <button type="submit" id="submit-button">Submit</button>

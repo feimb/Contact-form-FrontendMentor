@@ -56,7 +56,7 @@ h1{
     margin-bottom: 12px;
 }
 .container-input input:focus,
-#Message-input:focus{
+#message-input:focus{
     border: 1px solid var(--hover-color);
 }
 .container--query-type{
@@ -83,11 +83,10 @@ h1{
     align-items: center;
     gap: 8px;
 }
-
 .container--message {
-    margin: 20px 0;
+    margin: 40px 0;
 }
-#Message-input{
+#message-input{
     width: 100%;
     resize: none;
     outline: none;
@@ -109,20 +108,60 @@ h1{
     color: white;
     font-size: 0.8rem;
     font-weight: bold;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .required{
     color: var(--tertiary-color);
+    margin-top: 12px;
 }
 .container--consent-input{
     display: flex;
 }
 .inactive{ 
-    display: none;
+    display: none;  
 }
 .label::after{
     color: var(--hover-color);
     content: "*";
+}
+.message-sent{
+    position: fixed;
+    top: -120px;
+    background-color: var(--font-color);
+    padding: 24px;
+    border-radius: 8px;
+    transition: all 0.5s ease
+}
+.message-sent div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.message-sent div h2{
+    font-size: 1rem;
+    color: white;
+}
+.message-sent p {
+    margin-top: 8px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.747);
+}
+.la-otra-posicion{
+    top: 20px;
+}
+
+@media (max-width: 800px) {
+    form{
+        width: 100%;
+    }
+    .container-inputs{
+        display: block;
+    }
+    .container--query-type .container-radio-input{
+        grid-template-columns: 1fr;
+    }
 }
