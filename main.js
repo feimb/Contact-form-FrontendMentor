@@ -23,6 +23,8 @@ const messageSent = document.querySelector(".message-sent")
 function removeInactive(input, inputRequired){
   if(input.value.trim() == "" ){
     inputRequired.classList.remove("inactive");
+  }else{
+    inputRequired.classList.add("inactive");
   }
 }
 submitBtn.addEventListener("click", function(event){
@@ -55,11 +57,15 @@ submitBtn.addEventListener("click", function(event){
   //radio
   if(radioInput1.checked == false && radioInput2.checked == false){
     radioRequired.classList.remove("inactive");
+  }else{
+    radioRequired.classList.add("inactive");
   }
   // message
   removeInactive(messageInput, messageRequired)
   // consent 
   if(consentInput.checked == false){
     consentRequired.classList.remove("inactive");
+  }else{
+    consentRequired.classList.add("inactive");
   }
 });
