@@ -8,7 +8,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
@@ -33,8 +32,6 @@ Users should be able to:
 
 - Solution URL: [solution github](https://github.com/feimb/Contact-form-FrontendMentor)
 - Live Site URL: []()
-
-## My process
 
 ### Built with
 
